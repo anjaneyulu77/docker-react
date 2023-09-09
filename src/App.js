@@ -6,11 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           Nagaraju Anjaneyulu
-	  DevOps Engineer
-	  <h1> React is used for front end </h1>
-	 </p>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
