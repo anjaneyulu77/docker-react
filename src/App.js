@@ -14,6 +14,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+            <p> Devops Engineer with AWS </p>
         </a>
       </header>
     </div>
