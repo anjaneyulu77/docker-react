@@ -1,11 +1,11 @@
-FROM node:alpine 
-WORKDIR /app
-copy package.json .
+FROM node:19
+ENV PORT 3000
+EXPOSE 3000
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY package.json .
 RUN npm install
-copy . .
-RUN npm run build
+COPY . .
 
-FROM nginx
-EXPOSE 80
-copy --from=0 /app/build /usr/share/nginx/html
-
+CMD ["npm", "start"]
